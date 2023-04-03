@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+   
+    box-sizing: border-box;
+    font-family: Lobster;
+}
+
+body {
+    background:  #d16ba5;
+}
+
+.bienvenida{
+    color: rgb(79, 202, 120);
+    font-size: 3.5rem;
+    text-align: center;
+
+}
+
+.card{
+    margin: 5rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30rem;
+    
+}
+
+.card:hover {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
