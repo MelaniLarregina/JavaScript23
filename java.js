@@ -41,6 +41,24 @@ class Personas{
       }
    }
 }
+/*EVENTOS*/
+btnFormulario.onclick = () => {alert ("Tu formulario fue enviado con éxito!")};
+
+const titulo = document.getElementsByTagName("h1")[0];
+console.log("H1, titulo");
+titulo.addEventListener("mousemove" ,() => {
+   console.log ("se movio el mousse")
+});
+
+const input = document.getElementById("nombreYapellido");
+
+input.addEventListener("keydown" ,() => {
+   console.log ("-> la tecla bajo")
+});
+
+input.addEventListener("keyup" ,() => {
+   console.log(" -> la tecla subio")
+});
 
 /*FUNCIONES*/
 
@@ -73,7 +91,6 @@ function traerPersonaPorDni(dni_buscado,validos){
    }
    return null;
 }
-
 /*CODIGO SUELTO*/
 let seguir = 's';
 let arrayPersonas = new Array();
