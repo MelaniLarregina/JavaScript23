@@ -132,3 +132,14 @@ if(personaBuscada !=null){
 }else{
    alert("esa persona no existe en la base de datos de prestamos!");
 }
+
+//STORAGE Y JSON
+localStorage.setItem("nombre", 1);
+const personasDiarias = localStorage.getItem("nombre");
+console.log("que cantidad de personas ingresaron hoy?", personasDiarias, parseInt(personasDiarias));
+
+const Unapersona = new Personas("Melani" , 40666354 , 25);
+const jsonDeUnaPersona = JSON.stringify(Unapersona);
+localStorage.setItem("persona" , jsonDeUnaPersona);
+
+const UnapersonaRecuperada = localStorage.getItem("persona");
